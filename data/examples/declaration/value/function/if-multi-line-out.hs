@@ -10,7 +10,6 @@ bar x =
     then
       foo x
         + 100
-    else
-      case x of
-        1 -> 10
-        _ -> 20
+    else case x of
+      1 -> 10
+      _ -> 20
