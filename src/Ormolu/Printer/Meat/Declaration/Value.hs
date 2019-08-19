@@ -182,7 +182,7 @@ p_match' placer pretty style isInfix strictness m_pats m_grhss = do
                   SplicePat _ _ -> True
                   _ -> False
             txt (if needsSpace then "\\ " else "\\")
-            stdCase
+            sitcc stdCase
           LambdaCase -> stdCase
       return inci'
   let

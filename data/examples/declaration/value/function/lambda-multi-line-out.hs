@@ -23,5 +23,5 @@ tricky2 =
 
 foo =
   prop "is inverse to closure" $ \(f :: StaticPtr (Int -> Int))
-  (x :: Int) ->
+                                  (x :: Int) ->
       (unclosure . closure) f x == deRefStaticPtr f x
