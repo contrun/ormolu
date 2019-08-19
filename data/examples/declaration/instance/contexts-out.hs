@@ -6,7 +6,6 @@ instance
     )
   => Ord (a, b)
   where
-
   compare _ _ = GT
 
 instance
@@ -16,7 +15,6 @@ instance
          b
          )
   where
-
   showsPrec _ _ = showString ""
 
 instance
@@ -35,5 +33,4 @@ instance
            )
          )
   where
-
   readsPrec = undefined
